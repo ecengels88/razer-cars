@@ -1,14 +1,16 @@
-<div class="nav">
+<div class="nav has-shadow">
   <div class="container">
     <div class="nav-left">
       <h1 class="nav-item is-brand">
-        <a href="#" class="nav-item is-active">Razer Cars</a>
+        {{#link-to 'index' class="nav-item is-active"}}<strong>Razer Cars</strong>{{/link-to}}
       </h1>
     </div>
     <div class="nav-right">
-      <a href="" class="nav-item is-tab">Home</a>
+      {{#link-to 'index' class="nav-item is-tab"}}Home{{/link-to}}
       <a href="" class="nav-item is-tab">All Manufacturers</a>
       <a href="" class="nav-item is-tab">Add Manufacturer</a>
     </div>
   </div>
 </div>
+
+{{outlet}}
