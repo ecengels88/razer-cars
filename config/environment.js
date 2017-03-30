@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    apiUrl: 'https://razerapi.herokuapp.com/ryan/basic/brands',
+    apiUrl: 'https://razerapi.herokuapp.com/ecengels88/basic/brands',
 
 
     modulePrefix: 'razer-cars',
