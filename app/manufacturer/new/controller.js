@@ -14,7 +14,7 @@ export default Ember.Controller.extend({
         body: JSON.stringify(this.formValues),
       }).then(r => r.json())
         .then(data => {
-        this.transitionToRoute('manufacturers'),
+        this.transitionToRoute('manufacturer'),
         this.set('formValues', {});
       })
     }
