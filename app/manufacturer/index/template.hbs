@@ -19,8 +19,8 @@
                 <tr>
                   <td>{{brands.name}}</td>
                   <td>{{brands.country}}</td>
-                  <td>{{brands.cars}}</td>
-                  <td>{{#link-to 'manufacturer.car' manufacturer.id}}See More{{/link-to}}</td>
+                  <td>{{brands.cars.length}}</td>
+                  <td>{{#link-to "manufacturer.car" manufacturer}}See More{{/link-to}}</td>
                 </tr>
                 {{/each}}
               </tbody>
