@@ -20,7 +20,7 @@
                   <td>{{brands.name}}</td>
                   <td>{{brands.country}}</td>
                   <td>{{brands.cars}}</td>
-                  <td><a href="#">See More</a></td>
+                  <td>{{#link-to 'manufacturer.car' manufacturer.id}}See More{{/link-to}}</td>
                 </tr>
                 {{/each}}
               </tbody>
