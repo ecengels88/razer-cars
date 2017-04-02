@@ -1,0 +1,27 @@
+<div class="columns">
+  <div class="column is-10 is-offset-1">
+    <form class="card is-fullwidth" {{action "save" on="submit"}}>
+      <div class="card-header">
+        <h1 class="card-header-title">Add New Manufacturer</h1>
+      </div>
+      <div class="card-content">
+        <div class="field">
+          <p class="control">
+            {{input class="input" type="text" value=formValues.name placeholder="Company Name"}}
+          </p>
+        </div>
+      </div>
+      <div class="card-content">
+        <div class="field">
+          <p class="control">
+            {{input class="input" type="text" value=formValues.country placeholder="ISO Country Code"}}
+          </p>
+        </div>
+      </div>
+      <div class="card-footer">
+        {{#link-to 'manufacturer.index' class="card-footer-item button is-warning"}}Back{{/link-to}}
+        <button class="card-footer-item is-info button" type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>
